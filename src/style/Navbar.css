@@ -1,0 +1,22 @@
+.navbar{
+    /*position: fixed;*/
+    width: 100%;
+    height: 4.5em;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-list{
+    padding: 1em 0 1em 0;
+    height: 2.5em;
+    margin: 0;
+}
+
+.navbar-list-item{
+    display: inline;
+    margin: auto 0.5em auto 0.5em;
+    font-size: 2em;
+}
+
+.icon{
+    width: 4%;
+}

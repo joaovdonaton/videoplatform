@@ -1,0 +1,13 @@
+.video-item{
+    width: 12.5em;
+    margin: 0.5em;
+}
+
+.video-link:visited, .video-link:hover, .video-link:active, .video-link{
+    color: black;
+    text-decoration: none;
+}
+
+.video-image{
+    max-width: 100%;
+}

@@ -1,0 +1,11 @@
+.container{
+    margin: 1em;
+    padding: 2em;
+    height: 100vh;
+    background-color: white;
+}
+
+.video-list{
+    display: flex;
+    flex-flow: wrap row;
+}
