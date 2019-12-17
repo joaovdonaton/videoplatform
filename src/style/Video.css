@@ -1,0 +1,12 @@
+.video-container{
+    margin: 1em;
+    padding: 1em 2em;
+    height: 150vh;
+    background-color: white;
+    text-align: center;
+}
+
+
+.video{
+    width: 80%;
+}

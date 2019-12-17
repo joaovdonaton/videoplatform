@@ -9,9 +9,9 @@ function MainPage(){
     return (<div className='container'>
         <p style={{marginTop: '0', fontSize: '1.5em'}}>Newest Videos</p>
         <div className='video-list'>
-            <VideoItem thumb={sample1}/>
-            <VideoItem thumb={sample2}/>
-            <VideoItem thumb={sample3}/>
+            <VideoItem thumb={sample1} id={'sample1'}/>
+            <VideoItem thumb={sample2} id={'sample2'}/>
+            <VideoItem thumb={sample3} id={'sample3'}/>
         </div>
     </div>)
 }
