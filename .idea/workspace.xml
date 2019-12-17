@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5bfb63f-ea29-42ba-bfb3-70b61d253f4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Pages/Login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pages/Register/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/Context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pages/Main Page/VideoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Main Page/VideoItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pages/Video/Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Video/Video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Navbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +107,8 @@
       <workItem from="1576544263466" duration="6542000" />
       <workItem from="1576586091567" duration="45000" />
       <workItem from="1576586164363" duration="271000" />
-      <workItem from="1576586880696" duration="3374000" />
+      <workItem from="1576586880696" duration="5287000" />
+      <workItem from="1576599625269" duration="6800000" />
     </task>
     <task id="LOCAL-00001" summary="main page added">
       <created>1576091568555</created>
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576551619333</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="video title and uploader are now displayed">
+      <created>1576590378909</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576590378909</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +162,8 @@
     <MESSAGE value="main page added" />
     <MESSAGE value="finally got the video thing working" />
     <MESSAGE value="thumbnails are now fetched from backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="thumbnails are now fetched from backend" />
+    <MESSAGE value="video title and uploader are now displayed" />
+    <option name="LAST_COMMIT_MESSAGE" value="video title and uploader are now displayed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576249585918">
@@ -171,30 +182,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1576017219509" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1576551618189">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1576590376822">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1576551618189" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1576590376822" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1576586888292">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1576586888292" />
-    <state width="1345" height="171" key="GridCell.Tab.0.bottom" timestamp="1576588617801">
+    <state width="1345" height="171" key="GridCell.Tab.0.bottom" timestamp="1576605750254">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576588617801" />
-    <state width="1345" height="171" key="GridCell.Tab.0.center" timestamp="1576588617801">
+    <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576605750254" />
+    <state width="1345" height="171" key="GridCell.Tab.0.center" timestamp="1576605750254">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576588617801" />
-    <state width="1345" height="171" key="GridCell.Tab.0.left" timestamp="1576588617801">
+    <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576605750254" />
+    <state width="1345" height="171" key="GridCell.Tab.0.left" timestamp="1576605750254">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576588617801" />
-    <state width="1345" height="171" key="GridCell.Tab.0.right" timestamp="1576588617801">
+    <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576605750254" />
+    <state width="1345" height="171" key="GridCell.Tab.0.right" timestamp="1576605750254">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576588617801" />
+    <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576605750254" />
     <state x="184" y="26" key="SettingsEditor" timestamp="1576551040819">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -203,6 +214,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1576547096856" />
+    <state x="370" y="105" width="626" height="558" key="find.popup" timestamp="1576602818176">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="370" y="105" width="626" height="558" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1576602818176" />
     <state x="346" y="89" key="search.everywhere.popup" timestamp="1576019176666">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
