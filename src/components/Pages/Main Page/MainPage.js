@@ -1,17 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../../../style/MainPage.css';
-import sample1 from '../../../images/sample thumbnails/sample1.png';
-import sample2 from '../../../images/sample thumbnails/sample2.png';
-import sample3 from '../../../images/sample thumbnails/sample3.png';
 import VideoItem from "./VideoItem";
 
 function MainPage(){
+    const [videoIds, setVideoIds] = useState([]);
+
+    const getIds = async () => {
+        if(videoIds.length === 0) {
+            const resp = await fetch('http://localhost:3001/thumbnail/getids');
+            setVideoIds((await resp.json()).ids);
+        }
+    };
+
+    getIds();
+
     return (<div className='container'>
-        <p style={{marginTop: '0', fontSize: '1.5em'}}>Newest Videos</p>
+        <p style={{marginTop: '0', fontSize: '1.5em'}}>Videos</p>
         <div className='video-list'>
-            <VideoItem thumb={sample1} id={'sample1'}/>
-            <VideoItem thumb={sample2} id={'sample2'}/>
-            <VideoItem thumb={sample3} id={'sample3'}/>
+            {videoIds.map(id => {
+                return <VideoItem id={id} key={id}/>;
+            })}
         </div>
     </div>)
 }
