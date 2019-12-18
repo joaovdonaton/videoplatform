@@ -1,0 +1,17 @@
+input[type=file]{
+    display: none;
+}
+
+.upload-button{
+    display: inline-block;
+    font-size: 1.5em;
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.upload-button:hover{
+    background-color: grey;
+}

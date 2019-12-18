@@ -6,6 +6,7 @@ import Video from './components/Pages/Video/Video';
 import Login from './components/Pages/Login/Login';
 import ContextState from "./context/Context";
 import Register from './components/Pages/Register/Register';
+import Upload from './components/Pages/Upload/Upload';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                         <Route exact path='/video/:id' component={Video}/>
                         <Route exact path='/login' component={Login}/>
                         <Route exact path='/register' component={Register}/>
+                        <Route exact path='/upload' component={Upload}/>
                     </Switch>
                 </div>
             </BrowserRouter>

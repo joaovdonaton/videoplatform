@@ -26,14 +26,18 @@ function Navbar(){
             </li>
             {
                 !token ?
-                <li className="navbar-list-item"
-                    style={{fontSize: '1.5em', float: 'right', margin: '0 2em'}}>
-                    <Link to='/login' className='navbar-link'>Login</Link>
-                </li> : <li className="navbar-list-item"
+                    <li className="navbar-list-item"
                         style={{fontSize: '1.5em', float: 'right', margin: '0 2em'}}>
+                        <Link to='/login' className='navbar-link'>Login</Link>
+                    </li> : <li className="navbar-list-item"
+                                style={{fontSize: '1.5em', float: 'right', margin: '0 2em'}}>
                         Logged in as {username}
                     </li>
             }
+            <li className="navbar-list-item"
+                style={{fontSize: '1.5em', float: 'right', margin: '0 2em'}}>
+                <Link to='/upload' className='navbar-link'>Upload</Link>
+            </li>
         </ul>
     </div>)
 }
