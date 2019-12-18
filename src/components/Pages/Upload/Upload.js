@@ -7,6 +7,7 @@ import {Context} from '../../../context/Context';
 function Upload(){
     const [selectedVideo, setSelectedVideo] = useState('');
     const [selectedThumbnail, setSelectedThumbnail] = useState('');
+    const [title, setTitle] = useState('');
     const context = useContext(Context);
 
     const onChange = (e) => {
@@ -16,6 +17,9 @@ function Upload(){
                 break;
             case 'thumbnail':
                 setSelectedThumbnail(e.target.files[0]);
+                break;
+            case 'title':
+                setTitle(e.target.value);
                 break;
             default:
                 break;
@@ -31,7 +35,7 @@ function Upload(){
 
         const videoResp = await axios.post(
             'http://localhost:3001/video/upload', videoFormData, {headers: {
-            token: context.token
+            token: context.token, videoTitle: title
             }});
     };
 
@@ -44,6 +48,9 @@ function Upload(){
             <label htmlFor='select-thumbnail' className='upload-button'>Select Image File (JPG)</label>
             <input id='select-thumbnail' type='file' name='thumbnail' onChange={onChange}/>
             <label>Currently selected thumbnail: <b>{selectedThumbnail.name}</b></label>
+            <br/>
+            <label style={{fontSize: '1.5em', margin: '1em'}}>Title:</label>
+            <input value={title} type='text' onChange={onChange} className='upload-text-area' name='title'/>
             <br/>
             <button type='submit' className='upload-button'>Upload Video</button>
         </form>

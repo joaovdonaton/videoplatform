@@ -12,7 +12,9 @@ function Navbar(){
     const getUsername = async () => {
         if(!username) {
             const resp = await axios.post(
-                'http://localhost:3001/authenticate/getuser', {token});
+                'http://localhost:3001/authenticate/getuser', {}, {headers: {
+                    token
+                    }});
             setUsername(resp.data.user);
         }
     };
