@@ -7,6 +7,7 @@ import Login from './components/Pages/Login/Login';
 import ContextState from "./context/Context";
 import Register from './components/Pages/Register/Register';
 import Upload from './components/Pages/Upload/Upload';
+import User from './components/Pages/User/User';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                         <Route exact path='/login' component={Login}/>
                         <Route exact path='/register' component={Register}/>
                         <Route exact path='/upload' component={Upload}/>
+                        <Route exact path='/user/:id' component={User}/>
                     </Switch>
                 </div>
             </BrowserRouter>
