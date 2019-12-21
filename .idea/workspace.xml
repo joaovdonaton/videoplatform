@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5bfb63f-ea29-42ba-bfb3-70b61d253f4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Pages/User/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pages/Video/Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Video/Video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Upload/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Upload/Upload.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -48,7 +49,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -110,7 +111,14 @@
       <workItem from="1576615585306" duration="512000" />
       <workItem from="1576616160698" duration="8000" />
       <workItem from="1576632166372" duration="2764000" />
-      <workItem from="1576702266580" duration="8883000" />
+      <workItem from="1576702266580" duration="9106000" />
+      <workItem from="1576720714093" duration="311000" />
+      <workItem from="1576767402939" duration="20000" />
+      <workItem from="1576852394678" duration="560000" />
+      <workItem from="1576857895091" duration="35000" />
+      <workItem from="1576891622680" duration="1147000" />
+      <workItem from="1576962368875" duration="522000" />
+      <workItem from="1576962922581" duration="1089000" />
     </task>
     <task id="LOCAL-00001" summary="main page added">
       <created>1576091568555</created>
@@ -161,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576709318346</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added a channel page where you can see what a specific user has uploaded">
+      <created>1576713893979</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576713893979</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +204,8 @@
     <MESSAGE value="fully functional jwt authentication system" />
     <MESSAGE value="semi functional upload system" />
     <MESSAGE value="fixed a problem with the navbar and upload now works!" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a problem with the navbar and upload now works!" />
+    <MESSAGE value="added a channel page where you can see what a specific user has uploaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a channel page where you can see what a specific user has uploaded" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576249585918">
@@ -208,10 +224,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1576017219509" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1576713327752">
+    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1576713892023">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1576713327752" />
+    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1576713892023" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1576586888292">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -220,30 +236,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="438" y="256" width="264" height="212" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1576606835949" />
-    <state width="1345" height="143" key="GridCell.Tab.0.bottom" timestamp="1576707160483">
+    <state width="1345" height="143" key="GridCell.Tab.0.bottom" timestamp="1576962462029">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="143" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576707160483" />
-    <state width="1345" height="143" key="GridCell.Tab.0.center" timestamp="1576707160483">
+    <state width="1345" height="143" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576962462029" />
+    <state width="1345" height="143" key="GridCell.Tab.0.center" timestamp="1576962462028">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="143" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576707160483" />
-    <state width="1345" height="143" key="GridCell.Tab.0.left" timestamp="1576707160483">
+    <state width="1345" height="143" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576962462028" />
+    <state width="1345" height="143" key="GridCell.Tab.0.left" timestamp="1576962462028">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="143" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576707160483" />
-    <state width="1345" height="143" key="GridCell.Tab.0.right" timestamp="1576707160483">
+    <state width="1345" height="143" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576962462028" />
+    <state width="1345" height="143" key="GridCell.Tab.0.right" timestamp="1576962462028">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="143" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576707160483" />
-    <state x="184" y="26" key="SettingsEditor" timestamp="1576551040819">
+    <state width="1345" height="143" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576962462028" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1576963409004">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1576551040819" />
-    <state x="275" y="112" key="Vcs.Push.Dialog.v2" timestamp="1576709335385">
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1576963409004" />
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2" timestamp="1576713950898">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="112" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1576709335385" />
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1576713950898" />
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576547096856">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

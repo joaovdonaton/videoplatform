@@ -8,6 +8,7 @@ function Upload(){
     const [selectedVideo, setSelectedVideo] = useState('');
     const [selectedThumbnail, setSelectedThumbnail] = useState('');
     const [title, setTitle] = useState('');
+    const [uploadResult, setUploadResult] = useState('');
     const context = useContext(Context);
 
     const onChange = (e) => {
@@ -37,9 +38,13 @@ function Upload(){
             'http://localhost:3001/video/upload', videoFormData, {headers: {
             token: context.token, videoTitle: title
             }});
+        setUploadResult(videoResp.data.msg);
     };
 
     return <div className='container'>
+        {uploadResult ?
+            <p style={{fontSize: '2em'}}>{uploadResult}</p>
+            :
         <form onSubmit={onSubmit}>
             <label htmlFor='select-video' className='upload-button'>Select Video File (MP4)</label>
             <input id='select-video' type='file' name='video' onChange={onChange}/>
@@ -53,7 +58,7 @@ function Upload(){
             <input value={title} type='text' onChange={onChange} className='upload-text-area' name='title'/>
             <br/>
             <button type='submit' className='upload-button'>Upload Video</button>
-        </form>
+        </form>}
     </div>
 }
 
