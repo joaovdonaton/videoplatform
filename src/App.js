@@ -22,6 +22,7 @@ function App() {
                         <Route exact path='/register' component={Register}/>
                         <Route exact path='/upload' component={Upload}/>
                         <Route exact path='/user/:id' component={User}/>
+                        <Route exact path='/video/:id/delete'/>
                     </Switch>
                 </div>
             </BrowserRouter>

@@ -11,3 +11,14 @@
 .video-image{
     max-width: 100%;
 }
+
+.video-delete-button:visited, .video-delete-button:active, .video-delete-button{
+    color: black;
+    text-decoration: none;
+    border: solid black 1px;
+}
+
+.video-delete-button:hover{
+    text-decoration: none;
+    background-color: gray;
+}
