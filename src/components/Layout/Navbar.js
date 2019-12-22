@@ -33,7 +33,7 @@ function Navbar(){
                         <Link to='/login' className='navbar-link'>Login</Link>
                     </li> : <li className="navbar-list-item"
                                 style={{fontSize: '1.5em', float: 'right', margin: '0 2em'}}>
-                        Logged in as {username}
+                        <Link to={`/user/${username}`} className='navbar-link'>My Channel</Link>
                     </li>
             }
             <li className="navbar-list-item"
