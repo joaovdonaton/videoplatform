@@ -8,6 +8,7 @@ import ContextState from "./context/Context";
 import Register from './components/Pages/Register/Register';
 import Upload from './components/Pages/Upload/Upload';
 import User from './components/Pages/User/User';
+import Delete from './components/Pages/Video/Delete';
 
 function App() {
     return (
@@ -22,7 +23,7 @@ function App() {
                         <Route exact path='/register' component={Register}/>
                         <Route exact path='/upload' component={Upload}/>
                         <Route exact path='/user/:id' component={User}/>
-                        <Route exact path='/video/:id/delete'/>
+                        <Route exact path='/video/:id/delete' component={Delete}/>
                     </Switch>
                 </div>
             </BrowserRouter>

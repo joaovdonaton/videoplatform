@@ -10,10 +10,12 @@ input[type=file]{
     border: solid black 1px;
     padding: 0.5em;
     margin: 1em;
+    text-decoration: none;
 }
 
 .upload-button:hover{
     background-color: grey;
+    text-decoration: none;
 }
 
 .upload-text-area{
