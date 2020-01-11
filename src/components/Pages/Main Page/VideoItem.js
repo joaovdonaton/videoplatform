@@ -19,14 +19,14 @@ function VideoItem({id}){
 
     const getVideoData = async () => {
         if(videoData.title == null || videoData.user == null){
-            const resp = await fetch(`http://localhost:3001/video/data/${id}`);
-            const {title, user} = await resp.json();
+            const resp = await axios.get(`http://localhost:3001/video/data/${id}`);
+            const {title, user} = resp.data;
             setVideoData({title, user});
         }
     };
 
     const getUser = async () => {
-        console.log(context.token);
+        //authenticate user and show delete option
         if(!username && context.token) {
             const resp = await axios.post(
                 'http://localhost:3001/authenticate/getuser', {},

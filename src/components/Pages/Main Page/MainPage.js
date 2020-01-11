@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
 import '../../../style/MainPage.css';
 import VideoItem from "./VideoItem";
+import axios from 'axios';
 
 function MainPage(){
     const [videoIds, setVideoIds] = useState([]);
 
     const getIds = async () => {
         if(videoIds.length === 0) {
-            const resp = await fetch('http://localhost:3001/thumbnail/getids');
-            setVideoIds((await resp.json()).ids);
+            const resp = await axios.get('http://localhost:3001/thumbnail/getids');
+            setVideoIds((await resp.data).ids);
         }
     };
 

@@ -19,11 +19,7 @@ function Login(){
         e.preventDefault();
         const resp = await axios.post('http://localhost:3001/authenticate/generatejwt',
             {username, password});
-        if(resp.data.error){
-            setError(resp.data.error);
-        }else {
-            setToken(resp.data.jwt);
-        }
+        resp.data.error === undefined ? setToken(resp.data.jwt) : setError(resp.data.error);
     };
 
     return <div className='login-container'>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5bfb63f-ea29-42ba-bfb3-70b61d253f4e" name="Default Changelist" comment="added a delete button (doesn't work yet)">
-      <change afterPath="$PROJECT_DIR$/src/components/Pages/Video/Delete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c5bfb63f-ea29-42ba-bfb3-70b61d253f4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Upload.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Upload.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Main Page/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Main Page/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Main Page/VideoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Main Page/VideoItem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,21 @@
       <workItem from="1576891622680" duration="1147000" />
       <workItem from="1576962368875" duration="522000" />
       <workItem from="1576962922581" duration="2995000" />
-      <workItem from="1577026237795" duration="4148000" />
+      <workItem from="1577026237795" duration="4325000" />
+      <workItem from="1577061676741" duration="1230000" />
+      <workItem from="1577122910964" duration="382000" />
+      <workItem from="1577155274200" duration="24000" />
+      <workItem from="1578414033669" duration="820000" />
+      <workItem from="1578504849308" duration="50000" />
+      <workItem from="1578505718289" duration="724000" />
+      <workItem from="1578522760889" duration="22000" />
+      <workItem from="1578671938136" duration="61000" />
+      <workItem from="1578679213784" duration="100000" />
+      <workItem from="1578684962381" duration="7000" />
+      <workItem from="1578707369501" duration="1220000" />
+      <workItem from="1578709167632" duration="82000" />
+      <workItem from="1578709264467" duration="106000" />
+      <workItem from="1578709601106" duration="539000" />
     </task>
     <task id="LOCAL-00001" summary="main page added">
       <created>1576091568555</created>
@@ -199,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577030276852</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added a delete page">
+      <created>1577032384181</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1577032384181</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +251,8 @@
     <MESSAGE value="a message indicating upload success (or failure) shows up after uploading" />
     <MESSAGE value="my channel button after logged in" />
     <MESSAGE value="added a delete button (doesn't work yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a delete button (doesn't work yet)" />
+    <MESSAGE value="added a delete page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a delete page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576249585918">
@@ -250,10 +271,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1576017219509" />
-    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1577030449012">
+    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1577032381858">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1577030449012" />
+    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1577032381858" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1576586888292">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -262,30 +283,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="438" y="256" width="264" height="212" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1576606835949" />
-    <state width="1345" height="151" key="GridCell.Tab.0.bottom" timestamp="1577032122062">
+    <state width="1345" height="163" key="GridCell.Tab.0.bottom" timestamp="1578709704642">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="151" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1577032122062" />
-    <state width="1345" height="151" key="GridCell.Tab.0.center" timestamp="1577032122062">
+    <state width="1345" height="163" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578709704642" />
+    <state width="1345" height="163" key="GridCell.Tab.0.center" timestamp="1578709704642">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="151" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1577032122062" />
-    <state width="1345" height="151" key="GridCell.Tab.0.left" timestamp="1577032122062">
+    <state width="1345" height="163" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578709704642" />
+    <state width="1345" height="163" key="GridCell.Tab.0.left" timestamp="1578709704641">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="151" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1577032122062" />
-    <state width="1345" height="151" key="GridCell.Tab.0.right" timestamp="1577032122062">
+    <state width="1345" height="163" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578709704641" />
+    <state width="1345" height="163" key="GridCell.Tab.0.right" timestamp="1578709704642">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="151" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1577032122062" />
+    <state width="1345" height="163" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578709704642" />
     <state x="184" y="26" key="SettingsEditor" timestamp="1576963409004">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1576963409004" />
-    <state x="275" y="112" key="Vcs.Push.Dialog.v2" timestamp="1576977866570">
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2" timestamp="1577032400138">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="112" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1576977866570" />
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1577032400138" />
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576547096856">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
