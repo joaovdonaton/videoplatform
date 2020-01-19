@@ -11,6 +11,7 @@ function Upload(){
     const [uploadResult, setUploadResult] = useState('');
     const context = useContext(Context);
 
+    //update state based on form input
     const onChange = (e) => {
         switch (e.target.name){
             case 'video':
@@ -30,6 +31,7 @@ function Upload(){
     const onSubmit = async (e) => {
         e.preventDefault();
 
+        //send form data to the backend
         let videoFormData = new FormData();
         videoFormData.append('video', selectedVideo);
         videoFormData.append('thumbnail', selectedThumbnail);

@@ -10,6 +10,7 @@ function Delete({match}){
     const id = match.params.id;
     const context = useContext(Context);
 
+    //get video title
     const getVideoData = async () => {
         if(videoTitle == null){
             const resp = await fetch(`http://localhost:3001/video/data/${id}`);
@@ -20,6 +21,7 @@ function Delete({match}){
 
     getVideoData();
 
+    //send request to delete video
     const deleteVideo = async () => {
         if(!deleteResult){
             const resp = await axios.post(`http://localhost:3001/video/delete/${id}`, {},

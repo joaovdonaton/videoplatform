@@ -10,6 +10,7 @@ function VideoItem({id}){
     const [username, setUsername] = useState('');
     const context = useContext(Context);
 
+    //fetch thumbnail image from backend
     const getThumbnail = async () => {
         if(!thumbnailURL) {
             const resp = await fetch(`http://localhost:3001/thumbnail/getthumb/${id}`);
@@ -17,6 +18,7 @@ function VideoItem({id}){
         }
     };
 
+    //fetch video data from backend
     const getVideoData = async () => {
         if(videoData.title == null || videoData.user == null){
             const resp = await axios.get(`http://localhost:3001/video/data/${id}`);

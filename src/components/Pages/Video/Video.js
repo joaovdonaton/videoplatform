@@ -7,6 +7,7 @@ function Video({match}){
     const [videoData, setVideoData] = useState({title: null, user: null});
     const videoID = match.params.id;
 
+    //get video file and create a url to access it
     const getVideo = async () => {
         console.log(video);
         if(!video) {
@@ -15,6 +16,7 @@ function Video({match}){
         }
     };
 
+    //get video title and uploader
     const getVideoData = async () => {
         if(videoData.title == null || videoData.user == null){
             const resp = await fetch(`http://localhost:3001/video/data/${videoID}`);

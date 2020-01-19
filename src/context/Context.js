@@ -2,6 +2,7 @@ import React, {createContext, useReducer} from 'react';
 
 const context = createContext();
 
+//context for storing the jwt token used for authentication
 const ContextState = props => {
     const initialState = {
         token: null

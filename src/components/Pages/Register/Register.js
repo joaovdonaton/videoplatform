@@ -9,10 +9,13 @@ function Register(){
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
 
+    //update text fields and state
     const onChange = (e) => {
         e.target.type === 'text' ? setUsername(e.target.value) : setPassword(e.target.value);
     };
 
+    //try to create an account, if the backend returns resp.data.error
+    //show the error message
     const onCreate = async (e) => {
         e.preventDefault();
         const resp = await axios.post('http://localhost:3001/register/',

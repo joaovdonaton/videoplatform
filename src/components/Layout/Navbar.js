@@ -9,6 +9,7 @@ function Navbar(){
     const {token} = context;
     const [username, setUsername] = useState('');
 
+    //get the username of the currently authenticated user
     const getUsername = async () => {
         if(!username) {
             const resp = await axios.post(

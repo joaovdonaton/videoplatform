@@ -11,10 +11,12 @@ function Login(){
     const context = useContext(Context);
     const {setToken, token} = context;
 
+    //update the form text and password fields
     const onChange = (e) => {
         e.target.type === 'text' ? setUsername(e.target.value) : setPassword(e.target.value);
     };
 
+    //generate jwt if login is successful, otherwise show an error message
     const onLogin = async (e) => {
         e.preventDefault();
         const resp = await axios.post('http://localhost:3001/authenticate/generatejwt',
