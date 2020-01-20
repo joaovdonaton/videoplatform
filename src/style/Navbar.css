@@ -19,4 +19,9 @@
 .navbar-link:visited, .navbar-link:active, .navbar-link{
     text-decoration: none;
     color: black;
+    padding: 0.5em;
+}
+
+.navbar-link:hover{
+    background-color: rgb(202, 198, 198);
 }

@@ -25,3 +25,7 @@ yarn-error.log*
 .idea
 .test
 /src/images
+/backend/db/connectDB.js
+/backend/node_modules
+/backend/thumbnails
+/backend/videos
