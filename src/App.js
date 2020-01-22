@@ -10,6 +10,15 @@ import Upload from './components/Pages/Upload/Upload';
 import User from './components/Pages/User/User';
 import Delete from './components/Pages/Video/Delete';
 
+/*
+TODO:
+- Video descriptions, comment section and a visual overhaul of the Video page 
+- Create a color scheme for the whole web app
+- Playlists and Favorite videos
+- Video view counter
+- Better channel page (profile picture, bio, most viewed videos)
+*/
+
 function App() {
     return (
         <ContextState>
