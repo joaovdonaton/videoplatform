@@ -1,4 +1,4 @@
-import React, {createContext, useReducer} from 'react';
+import React, { createContext, useReducer } from "react";
 
 const context = createContext();
 
@@ -9,8 +9,8 @@ const ContextState = props => {
     };
 
     const [state, dispatch] = useReducer((state, action) => {
-        switch(action.type){
-            case 'SET_TOKEN':
+        switch (action.type) {
+            case "SET_TOKEN":
                 return {
                     ...state,
                     token: action.payload
@@ -20,15 +20,19 @@ const ContextState = props => {
         }
     }, initialState);
 
-    return (<context.Provider value={{
-        token: state.token,
-        setToken: (token) => {
-            dispatch({type: 'SET_TOKEN', payload: token});
-        }}
-    }>
-        {props.children}
-        </context.Provider>)
+    return (
+        <context.Provider
+            value={{
+                token: state.token,
+                setToken: token => {
+                    dispatch({ type: "SET_TOKEN", payload: token });
+                }
+            }}
+        >
+            {props.children}
+        </context.Provider>
+    );
 };
 
 export default ContextState;
-export {context as Context};
+export { context as Context };
