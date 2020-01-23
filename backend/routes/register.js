@@ -20,11 +20,12 @@ router.post('/', async (req, res) => {
     if(password.length < 8){
         return res.json({error: 'Password must have 8 or more characters'})
     }
-
+    
     if(username.length > 16){
         return res.json({error: 'Username can not have more than 16 characters'})
     }
 
+    //store password in and username in database (yes, I know passwords shouldn't be stored in plain text)
     user = new User({
         username, password
     });

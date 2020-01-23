@@ -33,12 +33,12 @@ let storage = multer.diskStorage({
 
 const upload = multer({storage});
 
-//send video data (title, uploader)
+//send video data (title, uploader and description)
 router.get('/data/:id', async (req, res) => {
     const vidData = await Video.findOne({id: req.params.id});
     if(vidData) {
-        const {title, user} = vidData;
-        await res.json({title, user});
+        const {title, user, description} = vidData;
+        await res.json({title, user, description});
     }
     else{
         await res.status(404);
@@ -60,7 +60,8 @@ router.post('/upload', auth, generateID
     const video = new Video({
         title: req.header('videoTitle'),
         id: req.id.join(''),
-        user: req.user
+        user: req.user,
+        description: req.header('description')
     });
 
     video.save();

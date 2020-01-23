@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 function Video({match}){
     const [video, setVideo] = useState('');
-    const [videoData, setVideoData] = useState({title: null, user: null});
+    const [videoData, setVideoData] = useState({title: null, user: null, description: null});
     const videoID = match.params.id;
 
     //get video file and create a url to access it
@@ -20,8 +20,8 @@ function Video({match}){
     const getVideoData = async () => {
         if(videoData.title == null || videoData.user == null){
             const resp = await fetch(`http://localhost:3001/video/data/${videoID}`);
-            const {title, user} = await resp.json();
-            setVideoData({title, user});
+            const {title, user, description} = await resp.json();
+            setVideoData({title, user, description});
         }
     };
 
@@ -34,6 +34,7 @@ function Video({match}){
         <br/>
         <video className='video' controls src={video} autoPlay={true}>
         </video>
+        <p>{videoData.description}</p>
     </div>)
 }
 

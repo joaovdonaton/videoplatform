@@ -13,6 +13,9 @@ const videoSchema = mongoose.Schema({
     user: {
         type: String,
         required: true
+    },
+    description: {
+        type: String
     }
 });
 

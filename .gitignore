@@ -26,6 +26,6 @@ yarn-error.log*
 .test
 /src/images
 /backend/db/connectDB.js
-/backend/node_modules
-/backend/thumbnails
+/backend/node_modules 
 /backend/videos
+/backend/thumbnails
