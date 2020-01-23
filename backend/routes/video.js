@@ -55,13 +55,13 @@ only accepts mp4 and jpg files
 this is a mess, I'll fix it later*/
 router.post('/upload', auth, generateID
     ,upload.fields([{name: 'video'}, {name: 'thumbnail'}]), (req
-                                                          , res) => {
+                                                          , res) => {                                                 
     req.id.pop();
     const video = new Video({
-        title: req.header('videoTitle'),
+        title: req.body.title,
         id: req.id.join(''),
         user: req.user,
-        description: req.header('description')
+        description: req.body.description
     });
 
     video.save();

@@ -39,15 +39,15 @@ function Upload() {
         let videoFormData = new FormData();
         videoFormData.append("video", selectedVideo);
         videoFormData.append("thumbnail", selectedThumbnail);
+        videoFormData.append("description", description);
+        videoFormData.append("title", title)
 
         const videoResp = await axios.post(
             "http://localhost:3001/video/upload",
             videoFormData,
             {
                 headers: {
-                    token: context.token,
-                    videoTitle: title,
-                    description
+                    token: context.token
                 }
             }
         );
