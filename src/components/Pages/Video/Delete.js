@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Context } from "../../../context/Context";
@@ -10,16 +10,18 @@ function Delete({ match }) {
     const id = match.params.id;
     const context = useContext(Context);
 
-    //get video title
-    const getVideoData = async () => {
-        if (videoTitle == null) {
-            const resp = await fetch(`http://localhost:3001/video/data/${id}`);
-            const { title } = await resp.json();
-            setVideoTitle(title);
-        }
-    };
+    useEffect(() => {
+        const getVideoData = async () => {
+            if (videoTitle == null) {
+                const resp = await fetch(`http://localhost:3001/video/data/${id}`);
+                const { title } = await resp.json();
+                setVideoTitle(title);
+            }
+        };
 
-    getVideoData();
+        getVideoData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     //send request to delete video
     const deleteVideo = async () => {

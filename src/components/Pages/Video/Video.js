@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../../style/Video.css";
 import { Link } from "react-router-dom";
 
@@ -11,30 +11,28 @@ function Video({ match }) {
     });
     const videoID = match.params.id;
 
-    //get video file and create a url to access it
-    const getVideo = async () => {
-        console.log(video);
-        if (!video) {
-            const resp = await fetch(
-                `http://localhost:3001/video/file/${videoID}`
-            );
-            setVideo(URL.createObjectURL(await resp.blob()));
+    //get video and video data on mount
+    useEffect(() => {
+        async function getData(){
+            //get the video file and create a url so it can be used by the html5 video tag
+            if (!video) {
+                const resp = await fetch(
+                    `http://localhost:3001/video/file/${videoID}`
+                );
+                setVideo(URL.createObjectURL(await resp.blob()));
+            }
+            //get all the information about the video
+            if (videoData.title == null || videoData.user == null || videoData.description == null) {
+                const resp = await fetch(
+                    `http://localhost:3001/video/data/${videoID}`
+                );
+                const { title, user, description } = await resp.json();
+                setVideoData({ title, user, description });
+            }
         }
-    };
-
-    //get video title and uploader
-    const getVideoData = async () => {
-        if (videoData.title == null || videoData.user == null) {
-            const resp = await fetch(
-                `http://localhost:3001/video/data/${videoID}`
-            );
-            const { title, user, description } = await resp.json();
-            setVideoData({ title, user, description });
-        }
-    };
-
-    getVideo();
-    getVideoData();
+        getData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     return (
         <div className="video-container">
