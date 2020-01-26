@@ -3,7 +3,7 @@ const router = express.Router();
 const Video = require('../models/Video');
 const auth = require('../middleware/auth');
 
-//send all thumbnail ids
+//send all thumbnail/video ids
 router.get('/getids', (req, res) => {
     Video.find({}, (err, videos) => {
         let ids = [];
@@ -29,5 +29,17 @@ router.get('/getuserthumbs/:username', (req, res) => {
 router.get('/getthumb/:id', (req, res) => {
     res.sendFile(`/thumbnails/${req.params.id}.jpg`, {root: './'});
 });
+
+router.post('/search/:text', (req, res) => {
+    Video.find({}, (err, videos) => {
+        let vids = [];
+        videos.forEach(video => {
+            if(video.title.includes(req.params.text)){              
+                vids.push(video.id)
+            }
+        })
+        res.json({ids: vids})
+    })
+})
 
 module.exports = router;

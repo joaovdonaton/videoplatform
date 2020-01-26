@@ -74,6 +74,18 @@ function Navbar() {
                         Upload
                     </Link>
                 </li>
+                <li
+                    className="navbar-list-item"
+                    style={{
+                        fontSize: "1.5em",
+                        float: "right",
+                        margin: "0 2em"
+                    }}
+                >
+                    <Link to="/search" className="navbar-link">
+                        Search
+                    </Link>
+                </li>
             </ul>
         </div>
     );
