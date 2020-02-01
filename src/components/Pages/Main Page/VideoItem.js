@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "../../../style/VideoItem.css";
 import { Link } from "react-router-dom";
 import { Context } from "../../../context/Context";
@@ -10,42 +10,40 @@ function VideoItem({ id }) {
     const [username, setUsername] = useState("");
     const context = useContext(Context);
 
-    //fetch thumbnail image from backend
-    const getThumbnail = async () => {
-        if (!thumbnailURL) {
-            const resp = await fetch(
-                `http://localhost:3001/thumbnail/getthumb/${id}`
-            );
-            setThumbnailURL(URL.createObjectURL(await resp.blob()));
-        }
-    };
+    useEffect(() => {
+        async function getData(){
+            //fetch thumbnail image from backend
+            if (!thumbnailURL) {
+                const resp = await fetch(
+                    `http://localhost:3001/thumbnail/getthumb/${id}`
+                );
+                setThumbnailURL(URL.createObjectURL(await resp.blob()));
+            }
 
-    //fetch video data from backend
-    const getVideoData = async () => {
-        if (videoData.title == null || videoData.user == null) {
-            const resp = await axios.get(
-                `http://localhost:3001/video/data/${id}`
-            );
-            const { title, user } = resp.data;
-            setVideoData({ title, user });
-        }
-    };
+            //fetch video data from backend
+            if (videoData.title == null || videoData.user == null) {
+                const resp = await axios.get(
+                    `http://localhost:3001/video/data/${id}`
+                );
+                const { title, user } = resp.data;
+                setVideoData({ title, user });
+            }
 
-    const getUser = async () => {
-        //authenticate user and show delete option
-        if (!username && context.token) {
-            const resp = await axios.post(
-                "http://localhost:3001/authenticate/getuser",
-                {},
-                { headers: { token: context.token } }
-            );
-            setUsername(resp.data.user);
+            //authenticate user and show delete option
+            if (!username && context.token) {
+                const resp = await axios.post(
+                    "http://localhost:3001/authenticate/getuser",
+                    {},
+                    { headers: { token: context.token } }
+                );
+                setUsername(resp.data.user);
+            }
         }
-    };
 
-    getThumbnail();
-    getVideoData();
-    getUser();
+        getData()
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     return (
         <div className="video-item">
